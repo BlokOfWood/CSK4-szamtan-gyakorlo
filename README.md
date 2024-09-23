@@ -2,3 +2,5 @@
 - Kozák Bálint
 - Szász Hanna Rebeka
 - Pap Sándor Dániel
+## Dokumentáció
+- [Követelmény specifikáció](docs/kovspec.md)
