@@ -12,4 +12,4 @@
 |Perzisztencia|K7|Pontszám tárolás|v1.0|A játékos eredménye az adatbázisban tárolva van.|
 
 ## Szabadreport
-A weboldal segítsen a számtan fejlesztésében, alapvető számítások begyakorlásában. Az oldal feldob egy egyenletet amelyet meg kell oldani. Egy külön oldalon meg lehet adni az egyenleteket a válaszokkal. Időzítő van, a pontszám az alapján, hogy hány egyenlet kész az idő alatt. Alapból lesznek egyenletek, de a felhasználó tud többet megadni.
+A weboldal segítsen a számtan fejlesztésében, alapvető számítások begyakorlásában. Az oldal feldob egy egyenletet amelyet meg kell oldani. Egy külön oldalon meg lehet adni az egyenleteket a válaszokkal. Az oldal növekedő nehézségű problémákat generál. Minden egyenlet megoldására egy megadott idő áll rendelkezésre.
