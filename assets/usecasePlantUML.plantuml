@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+package SystemBoundary {
+  usecase "Játékos név megadás" as JNM
+  usecase "Feladat generálás" as FG
+  usecase "Feladat időzítő" as FI
+  usecase "Feladat megoldás" as FM
+  usecase "Pontozás" as P
+  usecase "Pontszám tárolás" as PSZT
+  usecase "Pontszám tábla megtekintése" as PSZTM
+  FG ..> FM : <<include>>
+  FG ..> FI : <<include>>
+  FI ..> P : <<include>>
+  FM ..> P : <<include>>
+  P ..> PSZT : <<include>>
+  PSZT ..> PSZTM : <<include>>
+}
+:Játékos: --> FM
+:Játékos: --> JNM
+:Játékos: --> PSZTM
+:Pontok adatbázis: <-- PSZT
+@enduml
