@@ -12,6 +12,7 @@ package SystemBoundary {
   FG ..> FI : <<include>>
   FI ..> P : <<include>>
   FM ..> P : <<include>>
+  JNM ..> PSZT : <<include>>
   P ..> PSZT : <<include>>
   PSZT ..> PSZTM : <<include>>
 }
