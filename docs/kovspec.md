@@ -10,3 +10,6 @@
 |Játékmenet|K5|Feladat időzító|v1.0|Minden feladatra jut egy adott mennyiségű idő amely után a menet véget ér.|
 |Játékmenet|K6|Pontozás|v1.0|A játékmenet végén a felhasználó eredménye pontszámot kap.|
 |Perzisztencia|K7|Pontszám tárolás|v1.0|A játékos eredménye az adatbázisban tárolva van.|
+
+## Szabadreport
+A weboldal segítsen a számtan fejlesztésében, alapvető számítások begyakorlásában. Az oldal feldob egy egyenletet amelyet meg kell oldani. Egy külön oldalon meg lehet adni az egyenleteket a válaszokkal. Időzítő van, a pontszám az alapján, hogy hány egyenlet kész az idő alatt. Alapból lesznek egyenletek, de a felhasználó tud többet megadni.
