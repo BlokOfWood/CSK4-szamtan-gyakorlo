@@ -1,4 +1,6 @@
 # Követelmény specifikáció
+## Áttekintés
+Az alkazlmazás célja a számtan fejlesztésének segítése egy webes felületen keresztül, amelyen számtani feladatokat lehet megoldani, amelyek egyre nehezebbek. Az eredményeket egy ponttáblán össze lehet hasonlítani más felhasználókkal.
 
 ## Követelménylista
 |Modul|Id|Név|Verzió|Kifejtés|

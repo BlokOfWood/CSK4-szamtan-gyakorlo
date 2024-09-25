@@ -1,4 +1,8 @@
 # Funkcionális specifikáció
+## [Áttekíntés](./kovspec.md#Áttekíntés)
+
+## [Követelménylista](./kovspec.md#Követelménylista)
+
 ## Használati esetek
 ![Használati esetek uml ábra](../assets/usecases.png)
 
@@ -12,3 +16,8 @@
 |Pontozás|K6|
 |Pontszám tárolás|K7|
 |Pontszám tábla megtekintése|K3|
+
+## Forgatókönyvek
+- Játék indítása: a játékos megadja a nevét, rányom a start gombra.
+- Feladat elkészítése: a játékos kap egy egyenletet, például 10*x=40. Meg kell adnia az x értéket az egyenlet alatti mezőbe, ezután vagy entert nyom vagy rányom a leadás gombra.
+- Ponttábla megtekíntése: ponttábla gomb megnyomása
