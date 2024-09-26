@@ -5,7 +5,9 @@ export default {
 		extend: {
 			colors: {
 				accent: '#4FD8D8',
-				secondary: '#F1F5F9'
+				secondary: '#F1F5F9',
+				backgroundFrom: '#B374B8',
+				backgroundTo: '#C25858'
 			}
 		}
 	},
