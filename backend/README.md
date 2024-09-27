@@ -30,3 +30,25 @@ All available flags can be found in the `Makefile`.
 
 ## Other Commands
 All available commands can be found in the `Makefile`. To see all available commands, run `make help`.
+
+## Exposed Endpoints
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | /v1/healthcheck | Healthcheck endpoint |
+| GET | /v1/results | Get all results |
+| GET | /v1/results/{id} | Get a result by ID |
+| POST | /v1/results | Create a new result |
+
+### Examples
+Add a new result:
+```bash
+curl -X POST http://localhost:8080/v1/results -d '{"name": "John Doe", "score": 100}'
+# Output: 
+# {"result":{"id":1,"name":"John Doe","score":100}}
+```
+Get all results:
+```bash
+curl http://localhost:8080/v1/results
+# Output:
+# {"results":[{"id":2,"name":"John Doe","score":200},{"id":1,"name":"John Doe","score":100}]}
+```
