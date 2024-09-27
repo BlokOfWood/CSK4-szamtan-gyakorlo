@@ -16,11 +16,11 @@ type ResultModel struct {
 	DB *sql.DB
 }
 
-func (m ResultModel) Insert(name string, score int) error {
-	stmt := `INSERT INTO results (name, score, created_at) VALUES (?, ?, ?)`
+func (m ResultModel) Insert(result *Result) error {
+	stmt := `INSERT INTO results (name, score, created_at) VALUES (?, ?, ?)
+	RETURNING id, created_at`
 
-	_, err := m.DB.Exec(stmt, name, score, time.Now())
-	return err
+	return m.DB.QueryRow(stmt, result.Name, result.Score, time.Now()).Scan(&result.ID, &result.CreatedAt)
 }
 
 func (m ResultModel) Get(id int64) (*Result, error) {

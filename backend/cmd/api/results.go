@@ -20,12 +20,12 @@ func (app *application) createResultHandler(w http.ResponseWriter, r *http.Reque
 		return
 	}
 
-	result := data.Result{
+	result := &data.Result{
 		Name:  input.Name,
 		Score: input.Score,
 	}
 
-	err = app.models.Results.Insert(input.Name, input.Score)
+	err = app.models.Results.Insert(result)
 	if err != nil {
 		app.serverErrorResponse(w, r, err)
 		return
