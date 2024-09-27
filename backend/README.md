@@ -8,7 +8,6 @@
 ## Getting Started
 ### Running Without Make
 ```bash
-cd backend
 go mod tidy
 go run cmd/api
 ```
@@ -20,7 +19,6 @@ For all available flags, run `go run cmd/api -help`.
 
 ### Running With Make
 ```bash
-cd backend
 make tidy
 make run
 ```
