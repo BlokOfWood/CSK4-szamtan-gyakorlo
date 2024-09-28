@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"net/http"
 
@@ -50,7 +49,7 @@ func (app *application) showResultHandler(w http.ResponseWriter, r *http.Request
 	result, err := app.models.Results.Get(id)
 	if err != nil {
 		switch {
-		case errors.Is(err, data.ErrRecordNotFound):
+		case err.Error() == data.ErrRecordNotFound.Error():
 			app.notFoundResponse(w, r)
 		default:
 			app.serverErrorResponse(w, r, err)
