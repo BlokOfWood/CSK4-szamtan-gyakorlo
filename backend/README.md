@@ -3,21 +3,20 @@
 ## Prerequisites
 - [Go 1.23.1](https://go.dev/dl/)
 - [sqlite3](https://www.sqlite.org/download.html)
-- [make](https://gnuwin32.sourceforge.net/packages/make.htm) (optional)
 
 ## Getting Started
 ### Running Without Make
 ```bash
 go mod tidy
-go run cmd/api
+go run ./cmd/api
 ```
-Flags can be passed to the `go run cmd/api` command. For example, to run the server on port 8080:
+Flags can be passed to the `go run ./cmd/api` command. For example, to run the server on port 8080:
 ```bash
-go run cmd/api -port 8080
+go run ./cmd/api -port 8080
 ```
-For all available flags, run `go run cmd/api -help`.
+For all available flags, run `go run ./cmd/api -help`.
 
-### Running With Make
+### Running With Make (UNIX only)
 ```bash
 make tidy
 make run
