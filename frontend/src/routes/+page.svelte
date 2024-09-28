@@ -141,9 +141,6 @@
 				name: givenUsername,
 				score: currentPoints
 			}),
-			headers: {
-				'Content-Type': 'application/json'
-			}
 		});
 
 		await goto('leaderboard');
