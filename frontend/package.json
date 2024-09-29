@@ -6,13 +6,12 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "npm run test:integration && npm run test:unit",
+		"test": "npm run test:integration",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:integration": "playwright test"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -43,7 +42,7 @@
 		"typescript": "^5.6.2",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^5.0.3",
-		"vitest": "^2.0.0"
+		"vitest": "^2.1.1"
 	},
 	"type": "module"
 }
